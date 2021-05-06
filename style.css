@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #010101;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* menu CSS */
+
+.header_section{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header_logo{
+    width: 30%;
+}
+.logo img{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.header_menu{
+    width: 56%;
+}
+.logo span{
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 25px;
+    font-weight: 500px;
+}
+.primary_menu{}
+.primary_menu ul{}
+.primary_menu ul li{
+    display: inline-block;
+}
+.primary_menu ul li a {
+	display: block;
+	padding: 0 21px;
+	font-size: 18px;
+	line-height: 55px;
+}
+.primary_menu ul li a:hover{}
+.header_btm {
+	border: 2px solid #6278df;
+	display: inline-block;
+	padding: 8px 17px;
+	font-size: 21px;
+	font-weight: 550;
+	border-radius: 10px;
+	margin-top: 6px;
+
+
+    transition: .4s;
+}
+.header_btm:hover{
+    background: #6278df;
+    color: #fff;
+}
+
+/* DrobDown menu Css */
+.primary_menu ul li{
+    position: relative;
+}
+.primary_menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: #ffff;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.primary_menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* banner CSS */
+
+.banner_section{
+    background-image: url(https://i.ibb.co/tBPTLNS/mbr-4.jpg);
+    padding: 200px 0;
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    margin-top: 74px;
+}
+.banner_container{}
+.banner_container h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.banner_container h2{
+    font-size: 60px;
+    margin: 30px 0;
+}
+
+.dafualt_btn{
+    color: #7d7d7d;
+    padding: 20px 30px;
+    display: inline-block;
+    background: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.dafualt_btn:hover{
+    background: #6278df;
+    color: #fff;
+    transition: .4s;
+}
+
+/* Banner Section Css */
+
+.banner_botton{
+    background: #f7f9ff;
+    padding: 100px 0;
+}
+.video_left{
+    width: 48%;
+}
+.content_right{
+    width: 48%;
+}
+.content_right h3{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.content_right p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 1.7em;
+}
+
+/* service Section */
+.service_section{
+    background: #fff;
+    padding: 100px 0;
+}
+.section_title h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+.section_title p{
+    font-size: 23px;
+    color: #7a878b;
+}
+
+/* service box */
+.servics_items{
+    margin-top: 90px;
+}
+.servics_box{
+    width: 32%;
+    box-shadow: 4px 3px 17px rgba(0, 0, 0, .1);
+    margin-right: 2%;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.servics_box:nth-child(3n+3){
+    margin-right: 0;
+}
+.s-item {
+	width: 60px;
+	float: left;
+	min-height: 168px;
+	font-size: 43px;
+	color: #6278df;
+	margin-right: 10px;
+}
+.s-content{
+    margin-top: 1px;
+}
+.s-content h3{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.s-content p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 1.6em;
+}
